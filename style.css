@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* background-image: url('minionSpeak.png'); */
+}
+/* .container{
+    display: flex;
+    justify-content: space-around;
+    margin:1rem;
+    padding:10px;
+} */
+body{
+    background-image: url('minions.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* ShortHand Property */
+    /* background: #ffffff url("minions.webp") no-repeat right top;
+    margin-right:200px;
+    height:20px; */
+}
+.heading{
+    text-align: center;
+    padding:10px;
+    background: yellow;
+}
+.translate-btn{
+    margin:10px 20px;
+}
+.btn-primary:focus{
+    outline: none;
+}
+#input,#output{
+    display:block;
+    margin:1rem;
+    padding:1rem;
+    width:80%;
+    height:10vh;
+    border:2px solid black;
+}
+#input,#output:focus{
+    outline: none;
+}
+.btn-primary{
+    padding:10px;
+    border-radius: 85px;
+    background:yellow;
+    color:black;
+}
+h3{
+    margin-left:10px;
+}
+.minions-img{
+    width:20rem;
+    height: 15rem;
+    border-radius: 5px;
+}

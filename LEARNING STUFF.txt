@@ -1,0 +1,61 @@
+LEARNING STUFF
+
+To follow common standards for all the browser tech companies implemented the javaScript -->
+Gui -Graphical user interface
+Api - Application programming interface 
+Eg: document is an API which is used to talk to webpage or document
+*Library : packaged Programs
+* Library have API
+*javaScript.info , elogquent JavaScript best book to learn js
+
+var htmlPageObject={
+    "input-text":<textarea></textarea>
+    "input-btn":<button></button>
+}
+This object is called Document object Model(DOM) as it models the entire HTML document in an object ,and thus to access those properties we use methods like document.querySelector()
+
+function VS Call back function:
+a function which takes another function as parameter then it is called call back function
+
+CONSOLE
+when you console something to the browser and save it as a global storage and you can do anything with it noww
+
+CALLING API VIA JAVASCRIPT
+var url="www.google.com"
+fetch(url)
+.then(response=>response.json()) 
+.then(json=>console.log(json)) 
+
+Without Using Arrow Functions:
+fetch(url)
+.then(function responseHandler(response){return response.json()})
+.then(function convertJson(json){console.log(json)})
+
+the fetched response is converted to json
+Promise : I promise you to get data from the server when the  server respons to the url
+
+https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json
+
+checking api with different names
+const text1="am super woman";
+const text2="an wonder woman";
+function constructURL(text){
+    return "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?" +text;
+}
+constructURL(text1) -here you'll get the text name am super woman with url bcoz parameter is text1 ..likeWise
+function doFetch(text){
+    fetchconstructURL(text){
+        .then(response=>response.json()) 
+        .then(json=>console.log(json)) 
+    }
+}
+doFetch(text1)
+now you will get the values here!!!
+
+FIRST .then in fetch: it parse the responses into json by
+fetch(url).then(function parseResponseToJSON(response){
+    return response.json()}).then(json=>console.log(json));
+shift+enter - to go to next line in browser console
+
+mock server
+repl.it/@tanaypratap/lessonfourapi#index.js
