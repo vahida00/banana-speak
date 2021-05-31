@@ -2,15 +2,8 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    /* background-image: url('minionSpeak.png'); */
 }
-/* .container{
-    display: flex;
-    justify-content: space-around;
-    margin:1rem;
-    padding:10px;
-} */
-body{
+/* body{
     background-image: url('minions.webp');
     height: 100%;
     background-position: center;
@@ -20,7 +13,7 @@ body{
     /* background: #ffffff url("minions.webp") no-repeat right top;
     margin-right:200px;
     height:20px; */
-}
+} */
 .heading{
     text-align: center;
     padding:10px;
